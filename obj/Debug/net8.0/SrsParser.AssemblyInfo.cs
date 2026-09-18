@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SrsParser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62301d894875ebc7ab855162d1f43cf97a7c5fe4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac5295b5517bd072bbd2e01a2569e577a666d758")]
 [assembly: System.Reflection.AssemblyProductAttribute("SrsParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SrsParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

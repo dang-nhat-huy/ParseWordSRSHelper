@@ -3,6 +3,20 @@ using DocumentFormat.OpenXml.Wordprocessing;
 using SRSPARSER.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+// cho phép upload file lớn
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.Limits.MaxRequestBodySize = 200 * 1024 * 1024;  // 200 MB
+});
+
+// cho form data
+builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 200 * 1024 * 1024;  // 200 MB
+});
+
+builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
+    p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
     p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
